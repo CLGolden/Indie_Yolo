@@ -1,4 +1,7 @@
-# Local Business Marketing Program
+---
+title: "Local Business Marketing Program"
+layout: "base.njk"
+---
 
 - Application
 - Sponsor a Recipient

@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="pageWrapper">
-      <header>Local Business Marketing Program</header>
-      <main>{{ content | safe }}</main>
+      <header>
+      <h1>{{title}}</h1>
+      </header>
+      <main>
+         {{ content | safe }}      
+      </main>
       <footer>footer content</footer>
     </div>
   </body>
