@@ -83,23 +83,14 @@ You'll be learning a lot during the initial website setup. After that will be op
 
 ## Frequently Asked Questions
 
-<details>
-<summary>Will I be able to update my website?</summary>
-<p>There are many 'no-code' website solutions available now. Even so,
-they each have their own learning curve, and it's been my
-experience that busy business owners don't have the time or desire
-to learn them. So, they hire or assign someone to do it.</p>
-<p>In addition, the 'no-code' website builders require you to use their hosting service and forbid you to take your work anywhere else. In other words, you are renting a website from them. After just the 2nd month of this program, you will own your website and all its content.</p>
-<p>You'll need someone who knows HTML/CSS and other technical basics to make occasional updates to the site we're going to build. Many youngsters are learning how
-to code now; and it's important for them to do so! I will be training interns as 'Technical Assistants' to help graduates of this program at an affordable price.</p>
-</details>
-<details>
-<summary>What will the website look like?</summary>
-<p>
-Based on the principles of BMSU. If you confuse, you lose. Colors,
-Letter logo
-</p>
-</details>
-<details>
+<ul>
+{% for faq in collections.faqs %}
 
+<details>
+<summary>{{ faq.data.title }}</summary>
+{{ faq.templateContent | safe}}
 </details>
+
+{% endfor %}
+
+</ul>
