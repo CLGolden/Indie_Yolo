@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,300,400,600,700);
+
+html,
+body,
+p,
+ul li,
+ol li {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.3889;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+$light: 300;
+$regular: 400;
+$semiBold: 600;
+$bold: 700;
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: $semiBold;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+h2 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+
+.center {
+  text-align: center;
+}
+.bold {
+  font-weight: $bold;
+}
+.gold {
+  background-color: gold;
+}

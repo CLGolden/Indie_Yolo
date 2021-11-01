@@ -3,14 +3,6 @@ title: "Local Business Marketing Program"
 layout: "base.njk"
 ---
 
-- Application
-- Sponsor a Recipient
-- Contact Info
-
-## A Six-Month Marketing Program for Minority-Owned, Yolo County Businesses
-
-Current Grants Available: 4
-
 I'm a retired, local web developer who wants to contribute to the community - while continuing to do what I love: writing code and empowering independent people.
 
 I'm offering a very specific, online marketing program based on the fundamentals of 'Local Business' development: a website and a solid presence on Google.
@@ -18,22 +10,6 @@ I'm offering a very specific, online marketing program based on the fundamentals
 After 10 years helping small businesses with their websites and marketing, I've come to realize there is a small, but crucial, set of principles and actions a business owner must learn and employ if they want a practical, sustainable marketing foundation. This program is designed to educate, setup and support qualified, independent business owners.
 
 _Local Business Marketing Program_ is a non-profit organization. Local business owners need to apply for a grant. If you want to sponsor a recipient, please go to our Sponsor's page to learn more and donate.
-
-### Who this Program is For
-
-If you have a product or service that is only available for customers in or around Yolo County, CA, your business is considered to be a 'Local Business.' People can come to your shop or you go to them. Examples are businesses like seamstresses, bakeries, small growers, professionals or local construction contractors.
-
-"Minority" business owners include people of color, indiginous or Asian people, and women, especially single moms.
-
-### Who this Program is _Not_ For
-
-This program is not meant for
-
-- ecommerce sites
-- blogging or membership sites
-- online events
-- any business model that requires frequent updates to the website
-  It's also not for people who want to 'get rich quick' or make a million dollars. The objective of this program is to teach small business owners marketing habits that will produce a steady, sustainable income.
 
 ## Program Description
 

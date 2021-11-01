@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}}</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <div class="pageWrapper">
       <header>
-      <h1>{{title}}</h1>
+        <h1>{{title}}</h1>
+        
+        <nav>
+          <ul>
+            <li>Application</li>
+            <li>Sponsor a Local Business</li>
+            <li>Contact Info</li>
+          </ul>
+        </nav>
       </header>
       <main>
-         {{ content | safe }}      
+        <section class="hero">
+          <h2>A Six-Month Marketing Program<br>for Minority-Owned Local Businesses<br>in Yolo County</h2>
+          <p>Grants Available: 4</p>
+        </section>
+         {{ content | safe }}  
       </main>
       <footer>footer content</footer>
     </div>

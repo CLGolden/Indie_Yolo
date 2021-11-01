@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+@supports (display: grid) {
+  .message {
+    display: none;
+  }
+}
+.message {
+  background-color: $black;
+  color: $white;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

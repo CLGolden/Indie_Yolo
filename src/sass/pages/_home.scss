@@ -1,0 +1,12 @@
+/* ============================================================
+	HOME PAGE STYLES - MOBILE FIRST
+============================================================ */
+@use "../base" as *;
+@use "../abstracts" as *;
+@use "../layouts" as *;
+.hero {
+  h2 {
+    text-align: left;
+    font-size: 2em;
+  }
+}
