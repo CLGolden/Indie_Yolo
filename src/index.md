@@ -3,11 +3,6 @@ title: "Local Business Marketing Program"
 layout: "base.njk"
 ---
 
-<section class="hero">
-  <h2>A Six-Month Marketing Program<br>for Minority-Owned Local Businesses<br>in Yolo County</h2>
-  <p>Current Grants Available: 4</p>
-</section>
-
 {% for section in collections.home %}
 
   <section class="{{ section.data.class}}">

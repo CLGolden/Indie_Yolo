@@ -10,20 +10,38 @@
   <body>
     <div class="pageWrapper">
       <header>
-        <h1>{{title}}</h1>
-        
-        <nav>
-          <ul>
-            <li>Application</li>
-            <li>Sponsor a Local Business</li>
-            <li>Contact Info</li>
-          </ul>
-        </nav>
+          <div class="container">
+            <h1>{{title}}</h1>
+            <nav id="topnav">
+              <div class="menu-toggle">Menu</div>  
+              <ul class="clg-menu" id="menu-main-navigation">
+                <li>Grant Application</li>
+                <li>Sponsor a Local Business</li>
+                <li>Program Details</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+          </div>
       </header>
+      
       <main>
-         {{ content | safe }}  
+        <section class="hero">
+          <div class="container">
+            <h2>A Six-Month Marketing Program<br>for Minority-Owned Local Businesses<br>in Yolo County</h2>
+          </div>
+        </section>
+
+        <section class="essentials">
+          <div>Grants Available</div>
+          <div>Marketing Mentorship</div>
+          <div>Website Included</div>
+        </section>
+
+         <div class="container">{{ content | safe }}</div>
       </main>
-      <footer>footer content</footer>
+      <footer><div class="container">footer content</div></footer>
     </div>
+    <!-- JS -->
+	  <script src="js/main.js"></script>
   </body>
 </html>

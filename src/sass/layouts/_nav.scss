@@ -1,43 +1,43 @@
-/* ============================================================
+/* ==========================================
 	MAIN NAVIGATION - MOBILE FIRST
-============================================================ */
+========================================== */
 @use "../abstracts" as *;
 @use "../base" as *;
 nav {
   /* menu-toggle is the button */
   .menu-toggle {
-    display: block;
-    padding: 10px;
-    background: $black;
+    padding: 4px 0 4px 8px;
+    // background: $darkGray;
     color: $white;
     cursor: pointer;
     text-transform: uppercase;
     font-size: 20px;
   }
   .menu-toggle.toggled-on {
-    background: $black;
+    // background: $darkGray;
   }
   /* clg-menu is the ul */
   .clg-menu {
     display: none;
+    padding-left: 18px;
   }
   .clg-menu.toggled-on {
     display: block;
-    position: relative;
-    z-index: 10;
+    position: absolute;
+    background-color: $darkGray;
+    color: $white;
+    margin: 0;
+    width: 100%;
   }
   .clg-menu {
     clear: both;
-    /*margin-bottom: 60px;*/
     li {
-      font-weight: $bold;
+      margin: 6px 0;
       a {
-        background: $black;
-        color: $white;
+        background: $darkGray;
+        // color: $white;
         display: block;
-        margin: 1px 0;
-        padding: 10px;
-        font-weight: $bold;
+        // padding: 10px;
       }
     }
     li a:hover {
@@ -79,7 +79,7 @@ nav {
       }
     }
     .clg-menu li:hover {
-      background-color: $black;
+      background-color: $darkGray;
       color: $white;
       ul {
         display: block;

@@ -1,17 +1,43 @@
 ---
 title: Project Overview
-date: 2021-11-03
+date: 2021-11-01
 class: overview
 ---
 
 ## Program Overview
 
-I'm offering a very specific, online marketing program based on the fundamentals of 'Local Business' development: a website and a solid presence on Google.
+### Who this Program is For
 
-After 10 years helping small businesses with their websites and marketing, I've come to realize there is a small, but crucial, set of principles and actions a business owner must learn and employ if they want a practical, sustainable marketing foundation. This program is designed to educate, setup and support qualified, independent business owners.
+#### Local Businesses, New or Existing
 
-_Local Business Marketing Program_ is a non-profit organization. Local business owners need to apply for a grant. If you want to sponsor a recipient, please go to our Sponsor's page to learn more and donate.
+If you have a product or service that is only available for customers in or around Yolo County, CA, your business is considered to be a 'Local Business.'
 
-This is a six-month program because that's how long it takes to develop 'authority' on Google. The first month is about setting up a website. The next couple weeks is about setting up the tools needed to monitor success on Google. The remaining weeks 18 weeks are for posting weekly to Google My Business (GMB).
+People can come to your shop or you go to them. Examples are businesses like seamstresses, bakeries, small growers, dentists, landscapers or local construction contractors.
 
-I'll describe each of these parts in more detail below, but first, let's consider the habits a small business owner needs to develop and commit to.
+Even if you are a one-person product or service provider, you are a Local Business. This program would be ideal for you.
+
+#### Minority Business Owners
+
+This program is for "Minority" business owners which include people of color, indiginous or Asian people, and women, especially single moms.
+
+#### Business Owners with a Desire to Learn
+
+This is a mentorship program that provides the fundamentals of internet safety and marketing so that you can take over with confidence.
+
+### Who this Program is _Not_ For
+
+- E-commerce or online shopping websites
+- Businesses that are based on blogging, memberships or events
+- Businesses that need to make frequent updates to the website
+- Anyone who wants to 'game' the system. This program is based on success through good quality products, honest business dealings.
+- Anyone who wants to 'get rich quick.' Sustainable, practical success takes steady efforts over time.
+
+### What's included
+
+There is a small, but crucial, set of principles and actions a business owner must learn and employ if they want a practical, sustainable marketing foundation. This program is designed to provide the education and setup to accomplish that.
+
+This is a six-month program because that's how long it takes to develop 'authority' on Google.
+
+- The first month is about setting up a website.
+- The next couple weeks is about setting up the tools needed to monitor success on Google.
+- The remaining weeks 18 weeks are for posting weekly to Google My Business (GMB).

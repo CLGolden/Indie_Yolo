@@ -1,12 +1,26 @@
-/* ============================================================
+/* ==========================================
 	HOME PAGE STYLES - MOBILE FIRST
-============================================================ */
+========================================== */
 @use "../base" as *;
 @use "../abstracts" as *;
 @use "../layouts" as *;
 .hero {
+  background-color: $lightGray;
+  min-height: 60vh;
   h2 {
     text-align: left;
     font-size: 2em;
+    padding: 2rem 0 0 2rem;
+  }
+}
+.essentials {
+  background-color: $darkGray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  div {
+    flex: 0 0 auto;
+    padding: 1rem 0;
+    color: $white;
   }
 }
