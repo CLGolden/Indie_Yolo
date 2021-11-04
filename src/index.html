@@ -1,0 +1,40 @@
+---
+title: "Local Business Marketing Program"
+layout: "base.njk"
+---
+
+<section class="hero">
+  <div class="container">
+    <h2>
+      A Six-Month Marketing Program<br />for Minority-Owned Local Businesses<br />in
+      Yolo County
+    </h2>
+  </div>
+</section>
+
+<section class="essentials">
+  <div>Grants Available</div>
+  <div>Marketing Mentorship</div>
+  <div>Website Included</div>
+</section>
+
+<div class="container">
+  {% for section in collections.home %}
+  <section class="{{ section.data.class}}">
+    {{ section.templateContent | safe }}
+  </section>
+  {% endfor %}
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<ul>
+  {% for faq in collections.faqs %}
+
+  <details>
+    <summary>{{ faq.data.title }}</summary>
+    {{ faq.templateContent | safe}}
+  </details>
+
+  {% endfor %}
+</ul>
