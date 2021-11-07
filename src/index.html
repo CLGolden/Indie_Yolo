@@ -19,168 +19,29 @@ layout: "base.njk"
 </section>
 
 <section class="overview">
+  {% for div in collections.overview %} {{ div.templateContent | safe}} {%
+  endfor %}
+</section>
+
+<section id="projects" class="bggray">
   <div class="container">
-    <h2>Program Overview</h2>
-    <p>
-      This is a very specific program designed for small, local business owners
-      just beginning to do online marketing.
-    </p>
-    <p>It consists of...</p>
+    <h2>Past Projects</h2>
+
+    <p>Here are a couple examples of past static websites I've built.</p>
     <ul>
-      <li>The development of a simple, static website</li>
-      <li>Getting established on Google Search and Maps</li>
-      <li>Education and mentoring on marketing basics and internet safety</li>
-    </ul>
-
-    <h3>Who this Program is For</h3>
-    <div class="for">
-      <div>
-        <h4>Local Businesses</h4>
-        <p>
-          If you have a product or service that is only available for customers
-          in or around Yolo County, CA, your business is considered a 'Local
-          Business.'
-        </p>
-      </div>
-      <div>
-        <h4>Minority Business Owners</h4>
-        <p>
-          This program is for "Minority" business owners which include people of
-          color, indiginous or Asian people, and women, especially single moms.
-        </p>
-      </div>
-      <div>
-        <h4>Willingness to Learn</h4>
-        <p>
-          This is a beginners program. Business owners will be given the
-          education and mentorship needed to run their marketing program with
-          confidence.
-        </p>
-      </div>
-    </div>
-
-    <h3>Who this Program is Not For</h3>
-
-    <ul>
-      <li>E-commerce or online shopping websites</li>
-      <li>Businesses that are based on blogging, memberships or events</li>
-      <li>Businesses that need to make frequent updates to the website</li>
+      <li><a href="https://tinyteethoftally.com/">Tiny Teeth of Tally</a></li>
       <li>
-        Anyone who wants to 'game' the system. This program is based on success
-        through good quality products and community-first business dealings.
-      </li>
-      <li>
-        Anyone who wants to 'get rich quick.' Sustainable success takes steady
-        efforts over time.
+        <a href="https://www.garciascustomconcrete.com/"
+          >Garcia's Custom Concrete</a
+        >
       </li>
     </ul>
-    </div>
-</section>
-
-    <section class="commitment">
-      <div class="container">
-        <h3>Business Owner's Commitment</h3>
-
-      <p>
-        In order to be the business that people think of when they are
-        (finally!) ready to buy, small businesses will have had to be on the
-        public's mind continuously for some time beforehand. That means the
-        business owner needs to provide consistent, attractive, believable
-        advertising all the time. It doesn't have to be elaborate! But it does
-        need to be original.
-      </p>
-      <p>
-        Fortunately, business owners can do this advertising for free, if you
-        are willing to develop some new habits.
-      </p>
-
-      <h4>Marketing Habits for Local Business Owners</h4>
-      <p>For this program you'll need to be willing to do the following:</p>
-
-      <ul>
-        <li>
-          Take a 1-2 photos of your work, your place of business (if applicable)
-          and/or your - people every week.
-        </li>
-        <li>Text or email the photos to me along with a brief description.</li>
-        <li>
-          Get into the habit of asking customers for Google reviews or
-          testimonials.
-        </li>
-        <li>
-          Be willing to learn the basics of internet safety and marketing.
-        </li>
-      </ul>
-      </div>
-    </div>
-</section>
-<section id="schedule">
-    <div class="container">
-    <h3>Program Schedule</h3>
-    <p>
-      This is a six-month program because that's how long it takes to develop
-      some traction on Google - provided a number of things are done right.
-    </p>
-
-    <p class="steps">
-      <span>1 </span>The first month is about setting up a website. Besides
-      being informative and attractive to potential customers, it needs to be
-      mobile-friendly, accessible and optimized for search engines.
-    </p>
-
-    <p class="steps">
-      <span>2 </span>The next couple weeks is about setting up the tools needed
-      to be seen on Google Maps and in the search results. We'll also setup
-      tools needed to monitor our success.
-    </p>
-
-    <p class="steps">
-      <span>3 </span>The remaining 18 weeks are for posting weekly to Google My
-      Business (GMB).
-    </p>
-
-    <p>
-      <strong>Please Note:</strong> In this program, we will not be using any of
-      the Facebook social media products. There are several good reasons for
-      this, which I describe below. Instead, we will be using Google My Business
-      (GMB) and fundamental Search Engine Optimization (SEO) techniques. This
-      approach reaches an audience who is more <em>ready to buy</em> your
-      product or service.
-    </p>
-
-    <p>
-      Once the program is finished, you will know how to optimize and post your
-      own photos for GMB and follow critical SEO practices. I will provide
-      written and/or video tutorials for you or for anyone you hire to help in
-      the future.
-    </p>
-
-    <p>
-      This is not an automated program like so many of the SEO/Marketing
-      programs are. I will be hand-crafting the website and GMB posts and
-      teaching you how to carry on after the program.
-    </p>
   </div>
-</section>
-
-<section class="projects">
-  <div class="container">
-        <h3>Past Projects</h3>
-
-        <p>Here are a couple examples of past static websites I've built.</p>
-        <ul>
-          <li><a href="https://tinyteethoftally.com/">Tiny Teeth of Tally</a></li>
-          <li>
-            <a href="https://www.garciascustomconcrete.com/"
-              >Garcia's Custom Concrete</a
-            >
-          </li>
-        </ul>
 </section>
 
 <section id="about">
   <div class="container">
-    <h3>About This Project</h3>
+    <h2>About This Project</h2>
 
     <p>Local Business Marketing Program is a non-profit organization.</p>
 
@@ -205,7 +66,7 @@ layout: "base.njk"
   </div>
 </section>
 
-<section id="faqs">
+<section id="faqs" class="bggray">
   <div class="container">
     <h2>Frequently Asked Questions</h2>
 
@@ -254,8 +115,15 @@ layout: "base.njk"
     <details>
       <summary>Why won't we be using Facebook or Instagram?</summary>
       <p>
-        The most practical reason is that social media is for socializing.
-        more...
+        In this program, we will not be using any of the Facebook social media
+        products. The most practical reason is that social media is for
+        socializing.
+      </p>
+
+      <p>
+        Instead, we will be using Google My Business (GMB) and fundamental
+        Search Engine Optimization (SEO) techniques. This approach reaches an
+        audience who is more <em>ready to buy</em> your product or service.
       </p>
     </details>
     <details>

@@ -14,3 +14,14 @@
   display: table;
   clear: both;
 }
+
+.center {
+  text-align: center;
+}
+.gold {
+  background-color: gold;
+}
+.bggray {
+  background-color: $lightGray;
+  padding: 18px 0;
+}
