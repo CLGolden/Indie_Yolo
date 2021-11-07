@@ -7,10 +7,27 @@
 .hero {
   background-color: $lightGray;
   min-height: 60vh;
+  position: relative;
   h2 {
     text-align: left;
-    font-size: 2em;
-    padding: 2rem 0 0 2rem;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 3%;
+    left: 6%;
+  }
+
+  @include respond-to("narrow") {
+    h2 {
+      font-size: 2rem;
+      top: 4%;
+      padding-right: 20px;
+    }
+  }
+  @include respond-to("small") {
+    h2 {
+      font-size: 1.8rem;
+      top: 6%;
+    }
   }
 }
 .essentials {
@@ -19,9 +36,10 @@
   justify-content: space-around;
   align-items: center;
   div {
-    flex: 0 0 auto;
+    flex: 1 0 30%;
     padding: 1rem 0;
     color: $white;
+    text-align: center;
   }
 }
 .for {

@@ -1,0 +1,89 @@
+---
+title: "Contact Us"
+layout: "base.njk"
+---
+
+<div class="container">
+  <section class="contact">
+    <h2>Contact Us</h2>
+
+    <form name="contact" method="POST" data-netlify="false">
+      <div class="namefields">
+        <p>
+          <label for="firstname">First Name</label><br />
+          <input type="text" name="firstname" />
+        </p>
+
+        <p>
+          <label for="lastname">Last Name</label><br />
+          <input type="text" name="lastname" />
+        </p>
+      </div>
+      <p>
+        <label for="email">Your Email</label><br /><input
+          id="email"
+          type="email"
+          name="email"
+        />
+      </p>
+      <p><label for="message">Message</label><br /><textarea id="message" name="message"></textarea></p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+  </section>
+
+  <section id="grantApp">
+    <h2>Grant Application</h2>
+    <div class="content">
+      
+      <p>The grant application is a 4-step process. The application below is the first step, meant to show you have an interest.</p>
+      
+      <p>In Step 2, you'll be sent a request for more detailed information including some photos of your product or service.</p>
+      
+      <p>Step 3 is a Zoom call where we can address any final questions or concerns and discuss the process of working together.</p>
+      <p>Step 4 is the contract.</p>
+    </div>
+
+    <form name="grantapplication" method="POST" data-netlify="false">
+      <div class="namefields">
+        <p>
+          <label for="firstname">First Name</label><br />
+          <input type="text" name="firstname" />
+        </p>
+
+        <p>
+          <label for="lastname">Last Name</label><br />
+          <input type="text" name="lastname" />
+        </p>
+      </div>
+
+      <p>
+        <label for="email">Your Email</label><br /><input
+          id="email"
+          type="email"
+          name="email"
+        />
+      </p>
+
+      <p><label for="products">What product(s) or service do you provide?</label><br /><textarea name="products" id="products"></textarea></p>
+
+      <p><label for="time">For how long have you been in business? Have you made any sales, yet? Or are you just getting started?</label><br /><textarea name="time" id="time"></textarea></p>
+    
+      <p><label for="minority">Which minority group(s) do you identify with?</label><br><input type="text" name="minority" id="minority"></input></p>
+
+      <p><label for="people">Do you work alone? Or do you manage workers?</label><br><textarea name="people" id="people"></textarea></p>
+
+      <p><label for="place">Do you work from home? Or from an office or shop? In what general area of Yolo County?</label><br><textarea name="place" id="place"></textarea></p>
+
+      <p><label for="computer">What's your computer setup? Desktop, laptop, phone? What kind of each? How is your internet access?</label><br><textarea name="computer" id="computer"></textarea></p>
+
+      <p><label for="marketing">What marketing have you done so far? Do you have a website already? What domain name?</label><br><textarea name="marketing" id="marketing"></textarea></p>
+
+      <p><label for="commitment">Do you believe you can make a 6-month commitment to marketing your business? Are you willing to learn some new concepts and develop some new habits for your success and confidence?</label><input type="text" name="commitment" id="commitment" ></input></p>
+
+      <button type="submit">Apply for Grant</button>
+      
+    </form>
+  </section>
+</div>

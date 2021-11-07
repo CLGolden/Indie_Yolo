@@ -4,6 +4,10 @@
 @use "../abstracts" as *;
 header {
   background-color: $darkGray;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   .container {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,30 @@
+/* ==========================================
+	FORM STYLES - MOBILE FIRST
+========================================== */
+@use "../abstracts/" as *;
+form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  p {
+    margin: 4px 0;
+  }
+  input,
+  textarea {
+    width: 100%;
+  }
+  .namefields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  @include respond-to("medium") {
+    .namefields {
+      flex-direction: row;
+      justify-content: space-between;
+      p {
+        width: 48%;
+      }
+    }
+  }
+}
