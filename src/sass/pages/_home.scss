@@ -4,6 +4,7 @@
 @use "../base" as *;
 @use "../abstracts" as *;
 @use "../layouts" as *;
+
 .hero {
   background-color: $lightGray;
   min-height: 60vh;
@@ -47,12 +48,20 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  > div {
+    background-color: $darkGray;
+    padding: 12px 24px;
+    border-radius: 8px;
+  }
   @include respond-to("medium") {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    div {
+    > div {
       flex: 0 1 320px;
     }
   }
+}
+.commitment {
+  border: 1px solid black;
 }

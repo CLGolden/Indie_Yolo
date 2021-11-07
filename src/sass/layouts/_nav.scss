@@ -62,15 +62,10 @@ nav {
       justify-content: flex-end;
       align-items: center;
       > li {
-        flex: 1 1 30%;
+        flex: 1 1 auto;
         position: relative;
         text-align: center;
         padding: 6px 0;
-        ul {
-          position: absolute;
-          display: none;
-          top: 37px;
-        }
       }
     }
     .clg-menu li:hover {
