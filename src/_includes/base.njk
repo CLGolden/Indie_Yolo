@@ -4,27 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{title}} | Local Business Marketing Program</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <title>{{ title }} | Local Business Marketing Program</title>
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <div class="pageWrapper">
       <header>
-          <div class="container">
-            <h1><a href="/">Local Business Marketing Program</a></h1>
-            <nav id="topnav">
-              <div class="menu-toggle">Menu</div>  
-              <ul class="clg-menu" id="menu-main-navigation">
-                <li><a href="/contact/#grantApp">Grant Application</a></li>
-                <li><a href="/donate/">DONATE</a></li>                
-                <li><a href="/contact/">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
+        <div class="container">
+          <h1><a href="/">Local Business Marketing Program</a></h1>
+          <nav id="topnav">
+            <div class="menu-toggle">Menu</div>
+            <ul class="clg-menu" id="menu-main-navigation">
+              <li><a href="/contact/#grantApp">Grant Application</a></li>
+              <li><a href="/donate/">DONATE</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main>
-         {{ content | safe }}
+        {{ content | safe }}
       </main>
 
       <footer>
@@ -33,11 +33,11 @@
           <p><a href="/details/">Program Details</a></p>
           <p><a href="/corporation/">Corporate Information</a></p>
           <p><a href="/privacy/">Privacy Policy</a></p>
-          <p>@copy; {% year %}</p>
+          <p>&#169; {% year %}</p>
         </div>
       </footer>
     </div>
     <!-- JS -->
-	  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
