@@ -9,25 +9,50 @@
   background-color: $lightGray;
   min-height: 60vh;
   position: relative;
-  h2 {
-    text-align: left;
-    font-size: 1.8rem;
+  .heroBlurb {
     position: absolute;
     top: 3%;
     left: 6%;
-  }
-
-  @include respond-to("narrow") {
+    width: 280px;
     h2 {
-      font-size: 2rem;
-      top: 4%;
-      padding-right: 20px;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+    .cta {
+      a {
+        display: block;
+        margin: 6px;
+        margin-left: 0;
+        padding: 8px;
+        background-color: $white;
+        color: $black;
+        text-align: center;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+      a:hover {
+        background-color: $darkGray;
+      }
     }
   }
-  @include respond-to("small") {
-    h2 {
-      font-size: 1.8rem;
-      top: 6%;
+  @include respond-to("medium") {
+    .heroBlurb {
+      width: 600px;
+      top: 12%;
+      .cta {
+        display: flex;
+        a {
+          font-size: 1rem;
+          flex: 0 0 40%;
+          padding: 4px 0;
+        }
+      }
+    }
+  }
+  @include respond-to("large") {
+    .heroBlurb {
+      width: 650px;
     }
   }
 }
@@ -37,7 +62,7 @@
   justify-content: space-around;
   align-items: center;
   div {
-    flex: 1 0 30%;
+    flex: 1 1 30%;
     padding: 1rem 0;
     color: $white;
     text-align: center;
@@ -51,6 +76,7 @@
   padding: 1rem 0;
   > div {
     background-color: $darkGray;
+    margin: 8px;
     padding: 12px 24px;
     border-radius: 8px;
   }
@@ -59,7 +85,10 @@
     justify-content: space-between;
     align-items: flex-start;
     > div {
-      flex: 0 1 320px;
+      flex: 1 1 30%;
+      h4 {
+        font-size: 1.1rem;
+      }
     }
   }
 }

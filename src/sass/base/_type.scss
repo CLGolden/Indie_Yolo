@@ -12,6 +12,15 @@ ol li {
   outline: 0;
   vertical-align: baseline;
 }
+@media (min-width: 1300px) {
+  html,
+  body,
+  p,
+  ul li,
+  ol li {
+    font-size: 20px;
+  }
+}
 
 $light: 300;
 $regular: 400;
