@@ -1,5 +1,5 @@
 ---
-title: "Local Business Marketing Program"
+title: "Independent Yolo"
 layout: "base.njk"
 ---
 
@@ -11,8 +11,8 @@ layout: "base.njk"
         Businesses<br />in Yolo County
       </h2>
       <div class="cta">
-        <a href="/contact/#grantApp">Apply for Funding</a>
-        <a href="/donate/">Sponsor a Local Business</a>
+        <a href="/contact/#grantApp">Apply for Program</a>
+        <a href="/donate/">Donate</a>
       </div>
     </div>
   </div>
@@ -20,20 +20,20 @@ layout: "base.njk"
 
 <section class="essentials">
   <div>Funding Available</div>
-  <div>Marketing Mentorship</div>
+  <div>Marketing Education</div>
   <div>Website Included</div>
 </section>
 
-<section class="overview">
-  {% for div in collections.overview %} {{ div.templateContent | safe}} {%
-  endfor %}
-</section>
+{% for section in collections.home %} {{ section.templateContent | safe}} {%
+endfor %}
 
 <section id="projects" class="bggray">
   <div class="container">
-    <h2>Past Projects</h2>
+    <h2>Past & Current Projects</h2>
 
-    <p>Here are a couple examples of past static websites I've built.</p>
+    <p>
+      Here are a couple examples of small, local business projects we've done.
+    </p>
     <ul>
       <li><a href="https://tinyteethoftally.com/">Tiny Teeth of Tally</a></li>
       <li>
@@ -47,28 +47,10 @@ layout: "base.njk"
 
 <section id="about">
   <div class="container">
-    <h2>About Local Business Marketing Program</h2>
+    <h2>About <em>Indie Yolo</em></h2>
 
     <p>
-      <em>Local Business Marketing Program</em> is a non-profit organization.
-      (Still to be set up)
-    </p>
-
-    <p>
-      Local, minority business owners need to
-      <a href="/contact/#grantApp">apply for funding</a>.
-    </p>
-
-    <p>
-      If you want to sponsor a recipient, good for you! Please go to
-      <a href="/donate/">the Donate page</a> to learn how.
-    </p>
-
-    <p>Limited to 4 projects at a time...</p>
-
-    <p>
-      Not charity... Work with integrity, succeed and pass it forward.
-      Testimonials will be requested...
+      <em>Indie Yolo</em> is a non-profit organization. (Still to be set up)
     </p>
 
     <p>
@@ -167,3 +149,6 @@ layout: "base.njk"
     </details>
   </div>
 </section>
+
+{% for section in collections.details %} {{ section.templateContent | safe}} {%
+endfor %}

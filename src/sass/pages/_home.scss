@@ -68,6 +68,16 @@
     text-align: center;
   }
 }
+.currentPrograms {
+  text-align: center;
+  font-weight: $semiBold;
+  font-size: 1.4rem;
+  span {
+    text-decoration: underline;
+    color: $red;
+    font-size: 1.8rem;
+  }
+}
 .for {
   display: flex;
   flex-direction: column;
@@ -96,6 +106,23 @@
   background-color: $lightGray;
   padding: 24px 0;
 }
-.schedule {
-  margin-top: 18px;
+.notFor {
+  width: 80%;
+  padding: 12px;
+  margin: 12px 0;
+  h3,
+  ul li {
+    font-size: 90%;
+  }
+  ul li {
+    font-style: italic;
+  }
+}
+.start-more {
+  margin-bottom: 40px;
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: $semiBold;
+  }
 }
