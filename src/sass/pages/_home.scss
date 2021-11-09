@@ -8,10 +8,12 @@
 .hero {
   background-color: $lightGray;
   min-height: 60vh;
-  position: relative;
+  .container {
+    position: relative;
+  }
   .heroBlurb {
     position: absolute;
-    top: 3%;
+    top: 2vh;
     left: 6%;
     width: 280px;
     h2 {
@@ -39,7 +41,7 @@
   @include respond-to("medium") {
     .heroBlurb {
       width: 600px;
-      top: 12%;
+      top: 8vh;
       .cta {
         display: flex;
         a {
@@ -53,6 +55,7 @@
   @include respond-to("large") {
     .heroBlurb {
       width: 650px;
+      left: 0;
     }
   }
 }

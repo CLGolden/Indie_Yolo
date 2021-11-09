@@ -13,35 +13,50 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1em;
+    padding: 6px 0;
   }
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     width: 300px;
+    font-style: italic;
+    text-align: center;
   }
   nav {
     width: 100%;
     ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       list-style: none;
       padding: 0;
+      margin: 6px 0;
       li {
-        margin: 0 0.5em;
+        margin: 0 4px;
+        padding: 4px 8px;
+        font-size: 1.1rem;
+        border-radius: 2px;
+      }
+      li:hover {
+        background-color: $lightGray;
       }
     }
   }
-}
-@include respond-to("medium") {
-  header {
+  @include respond-to("medium") {
     .container {
       display: flex;
       flex-direction: row;
     }
+    h1 {
+      text-align: left;
+      padding-left: 8px;
+    }
     nav {
-      width: 45%;
-      font-size: 0.8rem;
+      width: 40%;
+    }
+  }
+  @include respond-to("large") {
+    h1 {
+      padding-left: 0;
     }
   }
 }
