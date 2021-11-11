@@ -19,12 +19,13 @@ form {
     flex-direction: column;
     justify-content: space-around;
   }
-  .sponsor {
+  .sponsor,
+  .requirement {
     display: flex;
+    justify-content: space-between;
     margin: 18px 0;
     input {
-      width: 50px;
-      margin-right: 20px;
+      flex: 0 0 50px;
     }
   }
   @include respond-to("medium") {
