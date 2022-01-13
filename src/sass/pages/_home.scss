@@ -6,8 +6,8 @@
 @use "../layouts" as *;
 
 .hero {
-  background-color: $lightGray;
   min-height: 60vh;
+  background-color: $lightGray;
   .container {
     position: relative;
   }
@@ -106,8 +106,16 @@
   }
 }
 .commitment {
-  background-color: $lightGray;
-  padding: 24px 0;
+  @include respond-to("medium") {
+    .container {
+      > div {
+        width: 328px;
+        float: right;
+        margin-left: 18px;
+        border-radius: 4px;
+      }
+    }
+  }
 }
 .notFor {
   width: 80%;
