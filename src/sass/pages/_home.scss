@@ -6,16 +6,20 @@
 @use "../layouts" as *;
 
 .hero {
-  min-height: 60vh;
-  background-color: $lightGray;
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
   .container {
     position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
   }
   .heroBlurb {
-    position: absolute;
-    top: 2vh;
-    left: 6%;
-    width: 280px;
+    background-color: rgba($black, 0.6);
+    padding: 1rem;
+    border-radius: 8px;
+    color: $white;
     h2 {
       text-align: left;
       font-size: 1.5rem;
@@ -40,8 +44,7 @@
   }
   @include respond-to("medium") {
     .heroBlurb {
-      width: 600px;
-      top: 8vh;
+      max-width: 60%;
       .cta {
         display: flex;
         a {
@@ -53,9 +56,9 @@
     }
   }
   @include respond-to("large") {
-    .heroBlurb {
-      width: 650px;
-      left: 0;
+    .container {
+      padding: 0;
+      padding-top: 1rem;
     }
   }
 }
@@ -69,6 +72,10 @@
     padding: 1rem 0;
     color: $white;
     text-align: center;
+    border-right: 1px solid $white;
+  }
+  div:last-child {
+    border: none;
   }
 }
 .currentPrograms {
