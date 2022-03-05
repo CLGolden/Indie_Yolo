@@ -1,0 +1,529 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,300,400,600,700);
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Anchor elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@supports (display: grid) {
+  .message {
+    display: none;
+  }
+}
+.message {
+  background-color: #000;
+  color: #fff;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.bggray {
+  background-color: #d3d3d3;
+  padding: 18px 0;
+}
+
+html,
+body,
+p,
+ul li,
+ol li {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+@media (min-width: 1300px) {
+  html,
+body,
+p,
+ul li,
+ol li {
+    font-size: 20px;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p,
+ul,
+ol {
+  margin: 1rem 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* ==========================================
+	MAIN LAYOUT
+========================================== */
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  padding: 0 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* ==========================================
+	HEADER STYLES - MOBILE FIRST
+========================================== */
+header {
+  background-color: #a9a9a9;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+header h1 {
+  font-size: 2rem;
+  padding: 0 3px;
+  font-style: italic;
+  text-align: center;
+}
+@media (min-width: 425px) {
+  header h1 {
+    padding: 0 12px;
+  }
+}
+@media (min-width: 768px) {
+  header .container {
+    display: flex;
+    flex-direction: row;
+  }
+  header h1 {
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0;
+    padding-left: 12px;
+    width: 58%;
+  }
+  header nav {
+    width: 40%;
+  }
+}
+@media (min-width: 1400px) {
+  header h1 {
+    padding-left: 0;
+    font-size: 1.6rem;
+  }
+}
+
+/* ==========================================
+	MAIN NAVIGATION - MOBILE FIRST
+========================================== */
+nav {
+  width: 100%;
+  /* menu-toggle is the button */
+  /* clg-menu is the ul */
+}
+nav .menu-toggle {
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-left: 18px;
+}
+nav .clg-menu {
+  display: none;
+  padding-left: 32px;
+  list-style: none;
+}
+nav .clg-menu.toggled-on {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  background-color: #a9a9a9;
+  color: #fff;
+  margin: 0;
+  width: 98%;
+}
+nav .clg-menu {
+  clear: both;
+}
+nav .clg-menu li {
+  margin: 6px 0;
+}
+nav .clg-menu li a {
+  background: #a9a9a9;
+  display: block;
+}
+nav .clg-menu li a:hover {
+  background: #d3d3d3;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    width: 40%;
+  }
+  nav .menu-toggle {
+    display: none;
+  }
+  nav .clg-menu,
+nav .clg-menu * {
+    margin: 0;
+    padding: 0;
+  }
+  nav .clg-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 6px 0;
+  }
+  nav .clg-menu > li {
+    flex: 1 1 auto;
+    margin: 0 4px;
+    padding: 4px 8px;
+    font-size: 1.1rem;
+    border-radius: 2px;
+  }
+  nav .clg-menu li:hover {
+    background-color: #d3d3d3;
+  }
+}
+/* ==========================================
+	FOOTER - MOBILE FIRST
+========================================== */
+footer {
+  background-color: #a9a9a9;
+}
+
+/* ============================================================
+	BUTTONS
+============================================================ */
+/* ==========================================
+	FORM STYLES - MOBILE FIRST
+========================================== */
+form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+form p {
+  margin: 4px 0;
+}
+form input,
+form textarea {
+  width: 100%;
+}
+form .namefields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+form .sponsor,
+form .requirement {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0;
+}
+form .sponsor input,
+form .requirement input {
+  flex: 0 0 50px;
+}
+@media (min-width: 768px) {
+  form .namefields {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  form .namefields p {
+    width: 48%;
+  }
+}
+
+.pageLink a {
+  text-decoration: none;
+  color: #000;
+  background-color: #a9a9a9;
+  padding: 24px 12px;
+  font-size: 1.2rem;
+  max-width: 200px;
+}
+
+/* ==========================================
+	HOME PAGE STYLES - MOBILE FIRST
+========================================== */
+.hero {
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+.hero .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.hero .heroBlurb {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+}
+.hero .heroBlurb h2 {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.hero .heroBlurb .cta a {
+  display: block;
+  margin: 6px;
+  margin-left: 0;
+  padding: 8px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.hero .heroBlurb .cta a:hover {
+  background-color: #a9a9a9;
+}
+@media (min-width: 768px) {
+  .hero .heroBlurb {
+    max-width: 60%;
+  }
+  .hero .heroBlurb .cta {
+    display: flex;
+  }
+  .hero .heroBlurb .cta a {
+    font-size: 1rem;
+    flex: 0 0 40%;
+    padding: 4px 0;
+  }
+}
+@media (min-width: 1400px) {
+  .hero .container {
+    padding: 0;
+    padding-top: 1rem;
+  }
+}
+
+.essentials {
+  background-color: #a9a9a9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.essentials div {
+  flex: 1 1 30%;
+  padding: 1rem 0;
+  color: #fff;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+.essentials div:last-child {
+  border: none;
+}
+
+.currentPrograms {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.currentPrograms span {
+  text-decoration: underline;
+  color: #880000;
+  font-size: 1.8rem;
+}
+
+.for {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+.for > div {
+  background-color: #a9a9a9;
+  margin: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .for {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .for > div {
+    flex: 0 0 30%;
+  }
+  .for > div h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .commitment .container > div {
+    width: 328px;
+    float: right;
+    margin-left: 18px;
+    border-radius: 4px;
+  }
+}
+
+.notFor {
+  width: 80%;
+  padding: 12px;
+  margin: 12px 0;
+}
+.notFor h3,
+.notFor ul li {
+  font-size: 90%;
+}
+.notFor ul li {
+  font-style: italic;
+}
+
+.start-more {
+  margin-bottom: 40px;
+}
+.start-more p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.toc a {
+  text-decoration: none;
+  color: inherit;
+}/*# sourceMappingURL=main.css.map */
