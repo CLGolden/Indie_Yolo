@@ -195,16 +195,19 @@ footer {
 header {
   background-color: #fbf7ec;
 }
-header a {
+header a,
+header a:hover,
+header a:active,
+header a:visited {
   text-decoration: none;
-  color: inherit;
+  color: #000;
 }
 header .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 0;
+  padding: 12px 0 0;
 }
 header h1 {
   font-size: 2rem;
@@ -229,7 +232,7 @@ header h1 span {
   }
   header h1 {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     padding: 0;
     padding-left: 12px;
     width: 58%;
@@ -255,7 +258,8 @@ nav {
 }
 nav .menu-toggle {
   color: #000;
-  background-color: #fbf7ec;
+  font-weight: 600;
+  background-color: #e2ded4;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 20px;
@@ -312,6 +316,9 @@ nav .clg-menu * {
     padding: 4px 8px;
     font-size: 1.1rem;
     border-radius: 2px;
+  }
+  nav .clg-menu > li:hover {
+    background-color: #b0ada5;
   }
 }
 /* ==========================================
@@ -404,19 +411,22 @@ a:visited {
   margin: 6px;
   margin-left: 0;
   padding: 8px;
-  background-color: #fbf7ec;
-  border: 1px #fbf7ec solid;
+  background-color: #e2ded4;
+  border: 1px #b0ada5 solid;
   color: #000;
   text-align: center;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 1.2rem;
   text-transform: uppercase;
 }
 .hero .heroBlurb .cta a:hover {
-  background-color: #fbf7ec;
+  background-color: #b0ada5;
+  border-color: #b0ada5;
 }
 @media (min-width: 768px) {
+  .hero .hero {
+    background-position: top left;
+  }
   .hero .heroBlurb {
     max-width: 60%;
   }
@@ -472,26 +482,28 @@ a:visited {
   align-items: center;
   padding: 1rem 0;
 }
-.for > div {
+.for .box {
   background-color: #fbf7ec;
   margin: 8px;
   padding: 12px 24px;
   border-radius: 8px;
 }
+
 @media (min-width: 768px) {
   .for {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .for > div {
-    flex: 0 0 30%;
+  .for .box {
+    flex: 1 1 30%;
+    display: flex;
+    min-height: 335px;
   }
-  .for > div h4 {
+  .for .box h4 {
     font-size: 1.1rem;
   }
 }
-
 .commitment {
   background-color: #fbf7ec;
 }

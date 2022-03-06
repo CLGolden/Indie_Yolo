@@ -30,21 +30,24 @@
         margin: 6px;
         margin-left: 0;
         padding: 8px;
-        background-color: $primary;
-        border: 1px $primary solid;
+        background-color: $primaryShade;
+        border: 1px $primaryShade2 solid;
         color: $black;
         text-align: center;
         border-radius: 4px;
         text-decoration: none;
-        font-size: 1.2rem;
         text-transform: uppercase;
       }
       a:hover {
-        background-color: $primary;
+        background-color: $primaryShade2;
+        border-color: $primaryShade2;
       }
     }
   }
   @include respond-to("medium") {
+    .hero {
+      background-position: top left;
+    }
     .heroBlurb {
       max-width: 60%;
       .cta {
@@ -98,18 +101,22 @@
   justify-content: space-around;
   align-items: center;
   padding: 1rem 0;
-  > div {
+  .box {
     background-color: $primary;
     margin: 8px;
     padding: 12px 24px;
     border-radius: 8px;
   }
-  @include respond-to("medium") {
+}
+@include respond-to("medium") {
+  .for {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    > div {
-      flex: 0 0 30%;
+    .box {
+      flex: 1 1 30%;
+      display: flex;
+      min-height: 335px;
       h4 {
         font-size: 1.1rem;
       }

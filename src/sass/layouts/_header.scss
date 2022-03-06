@@ -4,16 +4,19 @@
 @use "../abstracts" as *;
 header {
   background-color: $primary;
-  a {
+  a,
+  a:hover,
+  a:active,
+  a:visited {
     text-decoration: none;
-    color: inherit;
+    color: $black;
   }
   .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 0;
+    padding: 12px 0 0;
   }
   h1 {
     font-size: 2rem;
@@ -38,7 +41,7 @@ header {
     }
     h1 {
       text-align: left;
-      font-size: 1.2rem;
+      font-size: 1.8rem;
       padding: 0;
       padding-left: 12px;
       width: 58%;
