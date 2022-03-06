@@ -27,7 +27,7 @@ layout: "base.njk"
 {% for section in collections.home %} {{ section.templateContent | safe}} {%
 endfor %}
 
-<section id="projects" class="bggray">
+<section id="projects">
   <div class="container">
     <h2>Past & Current Projects</h2>
 
@@ -66,7 +66,7 @@ endfor %}
   </div>
 </section>
 
-<section id="faqs" class="bggray">
+<section id="faqs">
   <div class="container">
     <h2>Frequently Asked Questions</h2>
 
@@ -160,6 +160,14 @@ endfor %}
     </details>
   </div>
 </section>
+<hr />
 
 {% for section in collections.details %} {{ section.templateContent | safe}} {%
 endfor %}
+
+<section class="start-more">
+  <p>
+    Start the <a href="/contact/#application">application process</a> or
+    <a href="/contact/">Contact Us</a> if you have questions.
+  </p>
+</section>

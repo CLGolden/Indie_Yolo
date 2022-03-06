@@ -96,8 +96,8 @@ select {
   text-align: center;
 }
 
-.primaryTint {
-  background-color: #fcf9f0;
+.primary {
+  background-color: #fbf7ec;
 }
 
 html,
@@ -111,6 +111,7 @@ ol li {
   border: 0;
   outline: 0;
   vertical-align: baseline;
+  color: #191918;
 }
 
 @media (min-width: 1300px) {
@@ -177,7 +178,7 @@ footer {
 }
 
 .container {
-  padding: 0 1em;
+  padding: 1em;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -253,7 +254,7 @@ nav {
   /* clg-menu is the ul */
 }
 nav .menu-toggle {
-  color: #fff;
+  color: #000;
   background-color: #fbf7ec;
   cursor: pointer;
   text-transform: uppercase;
@@ -284,10 +285,6 @@ nav .clg-menu li a {
   background-color: transparent;
   display: block;
 }
-nav .clg-menu li a:hover {
-  background-color: #fbf7ec;
-  color: #fff;
-}
 
 @media only screen and (min-width: 768px) {
   nav {
@@ -316,15 +313,12 @@ nav .clg-menu * {
     font-size: 1.1rem;
     border-radius: 2px;
   }
-  nav .clg-menu li:hover {
-    background-color: #fbf7ec;
-  }
 }
 /* ==========================================
 	FOOTER - MOBILE FIRST
 ========================================== */
 footer {
-  background-color: #e2ded4;
+  background-color: #fbf7ec;
 }
 
 /* ============================================================
@@ -371,11 +365,13 @@ form .requirement input {
   }
 }
 
-.pageLink a {
-  color: #fbf7ec;
-  padding: 24px 12px;
-  font-size: 1.2rem;
-  max-width: 200px;
+a {
+  color: #ee1111;
+}
+
+a:hover,
+a:active {
+  color: #006bb7;
 }
 
 /* ==========================================
@@ -393,8 +389,8 @@ form .requirement input {
   padding-top: 1rem;
 }
 .hero .heroBlurb {
-  background-color: rgba(252, 249, 240, 0.8);
-  border: 1px #e2ded4;
+  background-color: rgba(251, 247, 236, 0.8);
+  border: 1px #fbf7ec;
   padding: 1rem;
   border-radius: 12px;
 }
@@ -408,7 +404,7 @@ form .requirement input {
   margin-left: 0;
   padding: 8px;
   background-color: #fbf7ec;
-  border: 1px #e2ded4 solid;
+  border: 1px #fbf7ec solid;
   color: #000;
   text-align: center;
   border-radius: 4px;
@@ -417,7 +413,7 @@ form .requirement input {
   text-transform: uppercase;
 }
 .hero .heroBlurb .cta a:hover {
-  background-color: #e2ded4;
+  background-color: #fbf7ec;
 }
 @media (min-width: 768px) {
   .hero .heroBlurb {
@@ -453,6 +449,10 @@ form .requirement input {
   border: none;
 }
 
+.independence {
+  background-color: #fbf7ec;
+}
+
 .currentPrograms {
   text-align: center;
   font-weight: 600;
@@ -472,7 +472,7 @@ form .requirement input {
   padding: 1rem 0;
 }
 .for > div {
-  background-color: #fff;
+  background-color: #fbf7ec;
   margin: 8px;
   padding: 12px 24px;
   border-radius: 8px;
@@ -491,6 +491,9 @@ form .requirement input {
   }
 }
 
+.commitment {
+  background-color: #fbf7ec;
+}
 @media (min-width: 768px) {
   .commitment .container > div {
     width: 328px;
@@ -502,8 +505,6 @@ form .requirement input {
 
 .notFor {
   width: 80%;
-  padding: 12px;
-  margin: 12px 0;
 }
 .notFor h3,
 .notFor ul li {
@@ -514,12 +515,21 @@ form .requirement input {
 }
 
 .start-more {
-  margin-bottom: 40px;
+  background-color: #006bb7;
+  padding: 1rem;
 }
 .start-more p {
   text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.start-more p a {
+  color: #fff;
+}
+
+#about {
+  background-color: #fbf7ec;
 }
 
 .toc a {

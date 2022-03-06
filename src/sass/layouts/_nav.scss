@@ -7,7 +7,7 @@ nav {
   width: 100%;
   /* menu-toggle is the button */
   .menu-toggle {
-    color: $white;
+    color: $black;
     background-color: $primary;
     cursor: pointer;
     text-transform: uppercase;
@@ -38,10 +38,6 @@ nav {
         display: block;
       }
     }
-    li a:hover {
-      background-color: $primary;
-      color: $white;
-    }
   }
 }
 
@@ -70,9 +66,6 @@ nav {
         font-size: 1.1rem;
         border-radius: 2px;
       }
-    }
-    .clg-menu li:hover {
-      background-color: $primary;
     }
   }
 }

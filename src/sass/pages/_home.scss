@@ -16,8 +16,8 @@
     padding-top: 1rem;
   }
   .heroBlurb {
-    background-color: rgba($primaryTint, 0.8);
-    border: 1px $primaryShade;
+    background-color: rgba($primary, 0.8);
+    border: 1px $primary;
     padding: 1rem;
     border-radius: 12px;
     h2 {
@@ -31,7 +31,7 @@
         margin-left: 0;
         padding: 8px;
         background-color: $primary;
-        border: 1px $primaryShade solid;
+        border: 1px $primary solid;
         color: $black;
         text-align: center;
         border-radius: 4px;
@@ -40,7 +40,7 @@
         text-transform: uppercase;
       }
       a:hover {
-        background-color: $primaryShade;
+        background-color: $primary;
       }
     }
   }
@@ -79,6 +79,9 @@
     border: none;
   }
 }
+.independence {
+  background-color: $primary;
+}
 .currentPrograms {
   text-align: center;
   font-weight: $semiBold;
@@ -96,7 +99,7 @@
   align-items: center;
   padding: 1rem 0;
   > div {
-    background-color: $white;
+    background-color: $primary;
     margin: 8px;
     padding: 12px 24px;
     border-radius: 8px;
@@ -114,6 +117,7 @@
   }
 }
 .commitment {
+  background-color: $primary;
   @include respond-to("medium") {
     .container {
       > div {
@@ -127,8 +131,6 @@
 }
 .notFor {
   width: 80%;
-  padding: 12px;
-  margin: 12px 0;
   h3,
   ul li {
     font-size: 90%;
@@ -138,10 +140,18 @@
   }
 }
 .start-more {
-  margin-bottom: 40px;
+  background-color: $secondary;
+  padding: 1rem;
   p {
     text-align: center;
-    font-size: 1.1rem;
-    font-weight: $semiBold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: $white;
+    a {
+      color: $white;
+    }
   }
+}
+#about {
+  background-color: $primary;
 }
