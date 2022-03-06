@@ -1,3 +1,19 @@
 /* ============================================================
 	BUTTONS
 ============================================================ */
+@use "../abstracts" as *;
+@use "../base" as *;
+button {
+  margin: 6px;
+  padding: 8px 12px;
+  background-color: $secondary;
+  border: 1px $secondary solid;
+  color: $white;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: $secondaryShade;
+  border-color: $secondaryShade;
+}

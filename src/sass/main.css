@@ -331,6 +331,22 @@ footer {
 /* ============================================================
 	BUTTONS
 ============================================================ */
+button {
+  margin: 6px;
+  padding: 8px 12px;
+  background-color: #006bb7;
+  border: 1px #006bb7 solid;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #0060a5;
+  border-color: #0060a5;
+}
+
 /* ==========================================
 	FORM STYLES - MOBILE FIRST
 ========================================== */
