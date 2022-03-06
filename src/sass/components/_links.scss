@@ -1,9 +1,11 @@
 @use "../abstracts/" as *;
+@use "../base/" as *;
 
 a {
   color: $accent;
 }
 a:hover,
-a:active {
+a:active,
+a:visited {
   color: $secondary;
 }

@@ -370,7 +370,8 @@ a {
 }
 
 a:hover,
-a:active {
+a:active,
+a:visited {
   color: #006bb7;
 }
 
