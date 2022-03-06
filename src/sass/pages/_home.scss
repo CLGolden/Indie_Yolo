@@ -16,10 +16,10 @@
     padding-top: 1rem;
   }
   .heroBlurb {
-    background-color: rgba($black, 0.6);
+    background-color: rgba($primaryTint, 0.8);
+    border: 1px $primaryShade;
     padding: 1rem;
-    border-radius: 8px;
-    color: $white;
+    border-radius: 12px;
     h2 {
       text-align: left;
       font-size: 1.5rem;
@@ -30,15 +30,17 @@
         margin: 6px;
         margin-left: 0;
         padding: 8px;
-        background-color: $white;
+        background-color: $primary;
+        border: 1px $primaryShade solid;
         color: $black;
         text-align: center;
         border-radius: 4px;
         text-decoration: none;
         font-size: 1.2rem;
+        text-transform: uppercase;
       }
       a:hover {
-        background-color: $darkGray;
+        background-color: $primaryShade;
       }
     }
   }
@@ -46,7 +48,6 @@
     .heroBlurb {
       max-width: 60%;
       .cta {
-        display: flex;
         a {
           font-size: 1rem;
           flex: 0 0 40%;
@@ -63,7 +64,7 @@
   }
 }
 .essentials {
-  background-color: $darkGray;
+  background-color: $secondary;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -84,7 +85,7 @@
   font-size: 1.4rem;
   span {
     text-decoration: underline;
-    color: $red;
+    color: $accent;
     font-size: 1.8rem;
   }
 }
@@ -95,7 +96,7 @@
   align-items: center;
   padding: 1rem 0;
   > div {
-    background-color: $darkGray;
+    background-color: $white;
     margin: 8px;
     padding: 12px 24px;
     border-radius: 8px;

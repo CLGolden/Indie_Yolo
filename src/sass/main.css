@@ -96,13 +96,8 @@ select {
   text-align: center;
 }
 
-.gold {
-  background-color: gold;
-}
-
-.bggray {
-  background-color: #d3d3d3;
-  padding: 18px 0;
+.primaryTint {
+  background-color: #fcf9f0;
 }
 
 html,
@@ -134,6 +129,7 @@ h4 {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.5;
+  color: #000;
 }
 
 h2 {
@@ -196,7 +192,7 @@ footer {
 	HEADER STYLES - MOBILE FIRST
 ========================================== */
 header {
-  background-color: #a9a9a9;
+  background-color: #fbf7ec;
 }
 header a {
   text-decoration: none;
@@ -214,6 +210,11 @@ header h1 {
   padding: 0 3px;
   font-style: italic;
   text-align: center;
+}
+header h1 span {
+  font-style: italic;
+  font-family: serif;
+  font-size: 0.9em;
 }
 @media (min-width: 425px) {
   header h1 {
@@ -253,6 +254,7 @@ nav {
 }
 nav .menu-toggle {
   color: #fff;
+  background-color: #fbf7ec;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 20px;
@@ -267,7 +269,7 @@ nav .clg-menu.toggled-on {
   display: block;
   position: absolute;
   z-index: 10;
-  background-color: #a9a9a9;
+  background-color: #fbf7ec;
   color: #fff;
   margin: 0;
   width: 98%;
@@ -279,11 +281,11 @@ nav .clg-menu li {
   margin: 6px 0;
 }
 nav .clg-menu li a {
-  background: #a9a9a9;
+  background-color: transparent;
   display: block;
 }
 nav .clg-menu li a:hover {
-  background: #d3d3d3;
+  background-color: #fbf7ec;
   color: #fff;
 }
 
@@ -315,14 +317,14 @@ nav .clg-menu * {
     border-radius: 2px;
   }
   nav .clg-menu li:hover {
-    background-color: #d3d3d3;
+    background-color: #fbf7ec;
   }
 }
 /* ==========================================
 	FOOTER - MOBILE FIRST
 ========================================== */
 footer {
-  background-color: #a9a9a9;
+  background-color: #e2ded4;
 }
 
 /* ============================================================
@@ -370,9 +372,7 @@ form .requirement input {
 }
 
 .pageLink a {
-  text-decoration: none;
-  color: #000;
-  background-color: #a9a9a9;
+  color: #fbf7ec;
   padding: 24px 12px;
   font-size: 1.2rem;
   max-width: 200px;
@@ -393,10 +393,10 @@ form .requirement input {
   padding-top: 1rem;
 }
 .hero .heroBlurb {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(252, 249, 240, 0.8);
+  border: 1px #e2ded4;
   padding: 1rem;
-  border-radius: 8px;
-  color: #fff;
+  border-radius: 12px;
 }
 .hero .heroBlurb h2 {
   text-align: left;
@@ -407,22 +407,21 @@ form .requirement input {
   margin: 6px;
   margin-left: 0;
   padding: 8px;
-  background-color: #fff;
+  background-color: #fbf7ec;
+  border: 1px #e2ded4 solid;
   color: #000;
   text-align: center;
   border-radius: 4px;
   text-decoration: none;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 .hero .heroBlurb .cta a:hover {
-  background-color: #a9a9a9;
+  background-color: #e2ded4;
 }
 @media (min-width: 768px) {
   .hero .heroBlurb {
     max-width: 60%;
-  }
-  .hero .heroBlurb .cta {
-    display: flex;
   }
   .hero .heroBlurb .cta a {
     font-size: 1rem;
@@ -438,7 +437,7 @@ form .requirement input {
 }
 
 .essentials {
-  background-color: #a9a9a9;
+  background-color: #006bb7;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -461,7 +460,7 @@ form .requirement input {
 }
 .currentPrograms span {
   text-decoration: underline;
-  color: #880000;
+  color: #ee1111;
   font-size: 1.8rem;
 }
 
@@ -473,7 +472,7 @@ form .requirement input {
   padding: 1rem 0;
 }
 .for > div {
-  background-color: #a9a9a9;
+  background-color: #fff;
   margin: 8px;
   padding: 12px 24px;
   border-radius: 8px;

@@ -3,7 +3,7 @@
 ========================================== */
 @use "../abstracts" as *;
 header {
-  background-color: $darkGray;
+  background-color: $primary;
   a {
     text-decoration: none;
     color: inherit;
@@ -20,6 +20,11 @@ header {
     padding: 0 3px;
     font-style: italic;
     text-align: center;
+    span {
+      font-style: italic;
+      font-family: serif;
+      font-size: 0.9em;
+    }
   }
   @include respond-to("narrow") {
     h1 {
