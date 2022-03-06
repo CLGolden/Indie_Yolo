@@ -23,12 +23,10 @@ ol li {
     font-size: 20px;
   }
 }
-
 $light: 300;
 $regular: 400;
 $semiBold: 600;
 $bold: 700;
-
 h1,
 h2,
 h3,
@@ -55,4 +53,8 @@ ol {
 }
 .bold {
   font-weight: $bold;
+}
+.footnote {
+  font-style: italic;
+  font-size: 0.6rem;
 }
