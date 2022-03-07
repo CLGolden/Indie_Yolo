@@ -406,6 +406,16 @@ a:visited {
 /* ==========================================
 	HOME PAGE STYLES - MOBILE FIRST
 ========================================== */
+details {
+  margin-bottom: 12px;
+}
+details summary {
+  font-weight: 600;
+}
+details p {
+  margin-left: 1rem;
+}
+
 .hero {
   min-height: 80vh;
   background-size: cover;

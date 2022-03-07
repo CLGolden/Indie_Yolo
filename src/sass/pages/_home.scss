@@ -5,6 +5,16 @@
 @use "../abstracts" as *;
 @use "../layouts" as *;
 
+details {
+  margin-bottom: 12px;
+  summary {
+    font-weight: $semiBold;
+  }
+  p {
+    margin-left: 1rem;
+  }
+}
+
 .hero {
   min-height: 80vh;
   background-size: cover;
