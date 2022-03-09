@@ -198,7 +198,7 @@ footer {
 	HEADER STYLES - MOBILE FIRST
 ========================================== */
 header {
-  background-color: #fbf7ec;
+  background-color: #fff;
 }
 header a,
 header a:hover,
@@ -234,6 +234,8 @@ header h1 span {
   header .container {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
   }
   header h1 {
     text-align: left;
@@ -330,7 +332,7 @@ nav .clg-menu * {
 	FOOTER - MOBILE FIRST
 ========================================== */
 footer {
-  background-color: #fbf7ec;
+  background-color: #e6e6e6;
 }
 
 /* ============================================================
@@ -428,8 +430,8 @@ details p {
   padding-top: 1rem;
 }
 .hero .heroBlurb {
-  background-color: rgba(251, 247, 236, 0.8);
-  border: 1px #fbf7ec;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px #fff;
   padding: 1rem;
   border-radius: 12px;
 }
@@ -475,7 +477,7 @@ details p {
 }
 
 .essentials {
-  background-color: #006bb7;
+  background-color: #4d4d4d;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -492,7 +494,7 @@ details p {
 }
 
 .independence {
-  background-color: #fbf7ec;
+  background-color: #e6e6e6;
 }
 
 .currentPrograms {
@@ -514,7 +516,7 @@ details p {
   padding: 1rem 0;
 }
 .for .box {
-  background-color: #fbf7ec;
+  background-color: #999999;
   margin: 8px;
   padding: 12px 24px;
   border-radius: 8px;
@@ -536,7 +538,7 @@ details p {
   }
 }
 .commitment {
-  background-color: #fbf7ec;
+  background-color: #999999;
 }
 @media (min-width: 768px) {
   .commitment .container > div {
@@ -559,7 +561,7 @@ details p {
 }
 
 .start-more {
-  background-color: #006bb7;
+  background-color: #4d4d4d;
   padding: 1rem;
 }
 .start-more p {
@@ -573,7 +575,7 @@ details p {
 }
 
 #about {
-  background-color: #fbf7ec;
+  background-color: #e6e6e6;
 }
 
 .toc a {

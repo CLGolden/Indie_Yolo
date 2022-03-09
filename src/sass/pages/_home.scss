@@ -26,8 +26,8 @@ details {
     padding-top: 1rem;
   }
   .heroBlurb {
-    background-color: rgba($primary, 0.8);
-    border: 1px $primary;
+    background-color: rgba($white, 0.8);
+    border: 1px $white;
     padding: 1rem;
     border-radius: 12px;
     h2 {
@@ -77,7 +77,7 @@ details {
   }
 }
 .essentials {
-  background-color: $secondary;
+  background-color: $grayShade;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -93,7 +93,7 @@ details {
   }
 }
 .independence {
-  background-color: $primary;
+  background-color: $grayTint;
 }
 .currentPrograms {
   text-align: center;
@@ -112,7 +112,7 @@ details {
   align-items: center;
   padding: 1rem 0;
   .box {
-    background-color: $primary;
+    background-color: $gray;
     margin: 8px;
     padding: 12px 24px;
     border-radius: 8px;
@@ -134,7 +134,7 @@ details {
   }
 }
 .commitment {
-  background-color: $primary;
+  background-color: $gray;
   @include respond-to("medium") {
     .container {
       > div {
@@ -157,7 +157,7 @@ details {
   }
 }
 .start-more {
-  background-color: $secondary;
+  background-color: $grayShade;
   padding: 1rem;
   p {
     text-align: center;
@@ -170,5 +170,5 @@ details {
   }
 }
 #about {
-  background-color: $primary;
+  background-color: $grayTint;
 }
