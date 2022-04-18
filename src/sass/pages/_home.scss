@@ -36,6 +36,7 @@ details {
     }
     p {
       font-style: italic;
+      margin:4px 0;
     }
     .cta {
       display: flex;
@@ -50,7 +51,7 @@ details {
         border: 1px $primaryShade2 solid;
         color: $white;
         text-align: center;
-        border-radius: 4px;
+        border-radius: 8px;
         text-decoration: none;
         text-transform: uppercase;
       }

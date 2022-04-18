@@ -441,6 +441,7 @@ details p {
 }
 .hero .heroBlurb p {
   font-style: italic;
+  margin: 4px 0;
 }
 .hero .heroBlurb .cta {
   display: flex;
@@ -458,7 +459,7 @@ details p {
   border: 1px #b0ada5 solid;
   color: #fff;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 8px;
   text-decoration: none;
   text-transform: uppercase;
 }
