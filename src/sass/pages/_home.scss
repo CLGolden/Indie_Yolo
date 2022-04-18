@@ -34,15 +34,21 @@ details {
       text-align: left;
       font-size: 1.5rem;
     }
+    p {
+      font-style: italic;
+    }
     .cta {
+      display: flex;
+      flex-wrap:wrap;
+      max-width:fit-content;
       a {
         display: block;
         margin: 6px;
         margin-left: 0;
         padding: 8px;
-        background-color: $primaryShade;
+        background-color: $burgundy;
         border: 1px $primaryShade2 solid;
-        color: $black;
+        color: $white;
         text-align: center;
         border-radius: 4px;
         text-decoration: none;

@@ -439,14 +439,24 @@ details p {
   text-align: left;
   font-size: 1.5rem;
 }
+.hero .heroBlurb p {
+  font-style: italic;
+}
+.hero .heroBlurb .cta {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
 .hero .heroBlurb .cta a {
   display: block;
   margin: 6px;
   margin-left: 0;
   padding: 8px;
-  background-color: #e2ded4;
+  background-color: #780116;
   border: 1px #b0ada5 solid;
-  color: #000;
+  color: #fff;
   text-align: center;
   border-radius: 4px;
   text-decoration: none;
