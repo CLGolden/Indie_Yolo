@@ -47,7 +47,7 @@ details {
         margin: 6px;
         margin-left: 0;
         padding: 8px 24px;
-        background-color: $burgundy;
+        background-color: $accent;
         color: $white;
         text-align: center;
         border-radius: 8px;
@@ -81,7 +81,7 @@ details {
   }
 }
 .essentials {
-  background-color: $grayShade;
+  background-color: $primary;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -97,7 +97,7 @@ details {
   }
 }
 .independence {
-  background-color: $grayTint;
+  background-color: $secondary;
 }
 .currentPrograms {
   text-align: center;
@@ -116,10 +116,16 @@ details {
   align-items: center;
   padding: 1rem 0;
   .box {
-    background-color: $gray;
+    background-color: $primary;
     margin: 8px;
     padding: 12px 24px;
     border-radius: 8px;
+    h2, h3, h4, p, li, a {
+      color:$white;
+    }
+    h4 {
+      text-align: center;
+    }
   }
 }
 @include respond-to("medium") {
@@ -130,7 +136,7 @@ details {
     .box {
       flex: 1 1 30%;
       display: flex;
-      min-height: 335px;
+      min-height: 300px;
       h4 {
         font-size: 1.1rem;
       }
@@ -138,7 +144,7 @@ details {
   }
 }
 .commitment {
-  background-color: $gray;
+  background-color: $secondary;
   @include respond-to("medium") {
     .container {
       > div {
@@ -161,7 +167,7 @@ details {
   }
 }
 .start-more {
-  background-color: $grayShade;
+  background-color: $primary;
   padding: 1rem;
   p {
     text-align: center;
@@ -174,5 +180,5 @@ details {
   }
 }
 #about {
-  background-color: $grayTint;
+  background-color: $secondary;
 }

@@ -97,7 +97,12 @@ select {
 }
 
 .primary {
-  background-color: #fbf7ec;
+  background-color: #1c6e8c;
+  color: #fff;
+}
+
+.secondary {
+  background-color: #e1d0bc;
 }
 
 html,
@@ -111,7 +116,7 @@ ol li {
   border: 0;
   outline: 0;
   vertical-align: baseline;
-  color: #191918;
+  color: #000;
 }
 
 @media (min-width: 1300px) {
@@ -266,7 +271,7 @@ nav {
 nav .menu-toggle {
   color: #000;
   font-weight: 600;
-  background-color: #e2ded4;
+  background-color: #114254;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 20px;
@@ -281,7 +286,7 @@ nav .clg-menu.toggled-on {
   display: block;
   position: absolute;
   z-index: 10;
-  background-color: #fbf7ec;
+  background-color: #1c6e8c;
   color: #fff;
   margin: 0;
   width: 98%;
@@ -323,9 +328,11 @@ nav .clg-menu * {
     padding: 4px 8px;
     font-size: 1.1rem;
     border-radius: 2px;
+    text-align: center;
+    border-radius: 6px;
   }
   nav .clg-menu > li:hover {
-    background-color: #b0ada5;
+    background-color: #609aaf;
   }
 }
 /* ==========================================
@@ -341,8 +348,8 @@ footer {
 button {
   margin: 6px;
   padding: 8px 12px;
-  background-color: #006bb7;
-  border: 1px #006bb7 solid;
+  background-color: #e1d0bc;
+  border: 1px #e1d0bc solid;
   color: #fff;
   text-align: center;
   border-radius: 4px;
@@ -350,8 +357,7 @@ button {
 }
 
 button:hover {
-  background-color: #0060a5;
-  border-color: #0060a5;
+  opacity: 0.8;
 }
 
 /* ==========================================
@@ -396,13 +402,13 @@ form .requirement input {
 }
 
 a {
-  color: #ee1111;
+  color: #780116;
 }
 
 a:hover,
 a:active,
 a:visited {
-  color: #006bb7;
+  color: #1c6e8c;
 }
 
 /* ==========================================
@@ -487,7 +493,7 @@ details p {
 }
 
 .essentials {
-  background-color: #4d4d4d;
+  background-color: #1c6e8c;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -504,7 +510,7 @@ details p {
 }
 
 .independence {
-  background-color: #e6e6e6;
+  background-color: #e1d0bc;
 }
 
 .currentPrograms {
@@ -514,7 +520,7 @@ details p {
 }
 .currentPrograms span {
   text-decoration: underline;
-  color: #ee1111;
+  color: #780116;
   font-size: 1.8rem;
 }
 
@@ -526,10 +532,16 @@ details p {
   padding: 1rem 0;
 }
 .for .box {
-  background-color: #999999;
+  background-color: #1c6e8c;
   margin: 8px;
   padding: 12px 24px;
   border-radius: 8px;
+}
+.for .box h2, .for .box h3, .for .box h4, .for .box p, .for .box li, .for .box a {
+  color: #fff;
+}
+.for .box h4 {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -541,14 +553,14 @@ details p {
   .for .box {
     flex: 1 1 30%;
     display: flex;
-    min-height: 335px;
+    min-height: 300px;
   }
   .for .box h4 {
     font-size: 1.1rem;
   }
 }
 .commitment {
-  background-color: #999999;
+  background-color: #e1d0bc;
 }
 @media (min-width: 768px) {
   .commitment .container > div {
@@ -571,7 +583,7 @@ details p {
 }
 
 .start-more {
-  background-color: #4d4d4d;
+  background-color: #1c6e8c;
   padding: 1rem;
 }
 .start-more p {
@@ -585,7 +597,7 @@ details p {
 }
 
 #about {
-  background-color: #e6e6e6;
+  background-color: #e1d0bc;
 }
 
 .toc a {
