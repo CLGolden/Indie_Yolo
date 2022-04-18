@@ -46,9 +46,8 @@ details {
         display: block;
         margin: 6px;
         margin-left: 0;
-        padding: 8px;
+        padding: 8px 24px;
         background-color: $burgundy;
-        border: 1px $primaryShade2 solid;
         color: $white;
         text-align: center;
         border-radius: 8px;
@@ -56,8 +55,7 @@ details {
         text-transform: uppercase;
       }
       a:hover {
-        background-color: $primaryShade2;
-        border-color: $primaryShade2;
+        opacity:0.8;
       }
     }
   }
@@ -68,10 +66,9 @@ details {
     .heroBlurb {
       max-width: 60%;
       .cta {
+        flex-wrap:nowrap;
         a {
-          font-size: 1rem;
-          flex: 0 0 40%;
-          padding: 4px 0;
+          font-size:0.8rem;
         }
       }
     }
