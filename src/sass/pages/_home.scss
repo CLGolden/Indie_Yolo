@@ -114,7 +114,6 @@ details {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  // padding: 1rem 0;
   .box {
     background-color: $primary;
     margin: 8px;
@@ -128,7 +127,7 @@ details {
     }
     img {
       max-width:160px;
-      margin:0 auto;
+      margin:0.5rem auto 0;
     }
   }
 }
@@ -136,11 +135,10 @@ details {
   .for {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     .box {
       flex: 1 1 30%;
       display: flex;
-      min-height: 540px;
       h4 {
         font-size: 1.1rem;
       }
@@ -149,13 +147,34 @@ details {
 }
 .commitment {
   background-color: $secondary;
-  @include respond-to("medium") {
+  .container {
+    .image {
+      margin-top:12px;
+      border: 1px solid $black;
+    }
+    .written {
+      ul {
+        padding-left:22px;
+        li {
+          margin-bottom:8px;
+        }
+      }
+    }
+  }
+}
+@include respond-to('medium') {
+  .commitment {
     .container {
-      > div {
-        width: 328px;
-        float: right;
-        margin-left: 18px;
-        border-radius: 4px;
+      .image {
+        width:48%;
+        float:right;
+        margin-left:12px;
+        max-width: 600px;
+      }
+      .written {
+        ul {
+          padding-left:28px;
+        }
       }
     }
   }

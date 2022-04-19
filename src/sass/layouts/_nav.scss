@@ -7,9 +7,9 @@ nav {
   width: 100%;
   /* menu-toggle is the button */
   .menu-toggle {
-    color: $black;
+    color: $white;
     font-weight: $semiBold;
-    background-color: $primaryShade;
+    background-color: $primary;
     cursor: pointer;
     text-transform: uppercase;
     font-size: 20px;
@@ -26,7 +26,6 @@ nav {
     position: absolute;
     z-index: 10;
     background-color: $primary;
-    color: $white;
     margin: 0;
     width: 98%;
   }
@@ -34,9 +33,13 @@ nav {
     clear: both;
     li {
       margin: 6px 0;
+      font-size:1.2rem;
+      line-height: 1.3rem;
       a {
         background-color: transparent;
         display: block;
+        color: $white;
+        padding:0.5em 0;
       }
     }
   }
@@ -68,6 +71,9 @@ nav {
         border-radius: 2px;
         text-align: center;
         border-radius:6px;
+        a {
+          color:$black;
+        }
       }
       > li:hover {
         background-color: $primaryTint;
