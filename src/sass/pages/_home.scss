@@ -179,6 +179,11 @@ details {
     }
   }
 }
+@media (min-width:800px) {
+  .commitment .container .written .callout {
+    margin:0;
+    }
+  }
 .notFor {
   .container {
     padding-top:0;

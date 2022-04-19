@@ -24,3 +24,14 @@
 .secondary {
   background-color: $secondary;
 }
+.callout {
+  background-color: $primary;
+  text-align: center;
+  width:fit-content;
+  margin:0 auto;
+  padding:1em 2em;
+  p, a {
+    color:$white;
+    font-size:1.2rem;
+  }
+}

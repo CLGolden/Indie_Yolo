@@ -105,6 +105,20 @@ select {
   background-color: #e1d0bc;
 }
 
+.callout {
+  background-color: #1c6e8c;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+.callout p, .callout a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
 html,
 body,
 p,
@@ -282,7 +296,7 @@ nav .menu-toggle {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 20px;
-  padding-left: 18px;
+  padding: 4px 0 4px 18px;
 }
 nav .clg-menu {
   display: none;
@@ -597,6 +611,11 @@ details p {
   }
   .commitment .container .written ul {
     padding-left: 28px;
+  }
+}
+@media (min-width: 800px) {
+  .commitment .container .written .callout {
+    margin: 0;
   }
 }
 .notFor .container {
