@@ -8,6 +8,12 @@ layout: "base.njk"
     <h2>Contact Us</h2>
 
     <form name="contact" method="POST" data-netlify="false">
+      <input
+        type="hidden"
+        id="subject"
+        name="subject"
+        value="Contact from Indie Yolo"
+      />
       <div class="namefields">
         <p>
           <label for="firstname">First Name</label><br />
