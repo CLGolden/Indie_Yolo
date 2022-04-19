@@ -114,7 +114,7 @@ details {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem 0;
+  // padding: 1rem 0;
   .box {
     background-color: $primary;
     margin: 8px;
@@ -126,6 +126,10 @@ details {
     h4 {
       text-align: center;
     }
+    img {
+      max-width:160px;
+      margin:0 auto;
+    }
   }
 }
 @include respond-to("medium") {
@@ -136,7 +140,7 @@ details {
     .box {
       flex: 1 1 30%;
       display: flex;
-      min-height: 300px;
+      min-height: 540px;
       h4 {
         font-size: 1.1rem;
       }
@@ -157,7 +161,9 @@ details {
   }
 }
 .notFor {
-  width: 80%;
+  .container {
+    padding-top:0;
+  }
   h3,
   ul li {
     font-size: 90%;

@@ -529,7 +529,6 @@ details p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem 0;
 }
 .for .box {
   background-color: #1c6e8c;
@@ -543,6 +542,10 @@ details p {
 .for .box h4 {
   text-align: center;
 }
+.for .box img {
+  max-width: 160px;
+  margin: 0 auto;
+}
 
 @media (min-width: 768px) {
   .for {
@@ -553,7 +556,7 @@ details p {
   .for .box {
     flex: 1 1 30%;
     display: flex;
-    min-height: 300px;
+    min-height: 540px;
   }
   .for .box h4 {
     font-size: 1.1rem;
@@ -571,8 +574,8 @@ details p {
   }
 }
 
-.notFor {
-  width: 80%;
+.notFor .container {
+  padding-top: 0;
 }
 .notFor h3,
 .notFor ul li {
