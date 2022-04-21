@@ -14,7 +14,6 @@ details {
     margin-left: 1rem;
   }
 }
-
 .hero {
   min-height: 80vh;
   background-size: cover;
@@ -151,6 +150,10 @@ details {
     .image {
       margin-top:12px;
       border: 1px solid $black;
+      img {
+        width:100%;
+        height: auto;
+      }
     }
     .written {
       ul {

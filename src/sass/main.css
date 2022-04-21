@@ -595,6 +595,10 @@ details p {
   margin-top: 12px;
   border: 1px solid #000;
 }
+.commitment .container .image img {
+  width: 100%;
+  height: auto;
+}
 .commitment .container .written ul {
   padding-left: 22px;
 }
