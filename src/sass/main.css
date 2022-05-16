@@ -98,6 +98,8 @@ select {
 
 .primary {
   background-color: #1c6e8c;
+}
+.primary h2, .primary h3, .primary p, .primary a, .primary li {
   color: #fff;
 }
 
@@ -119,6 +121,18 @@ select {
   font-size: 1.2rem;
 }
 
+@media (min-width: 768px) {
+  .colList {
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .colList {
+    -moz-columns: 3;
+         columns: 3;
+  }
+}
 html,
 body,
 p,
@@ -536,6 +550,14 @@ details p {
   border: none;
 }
 
+@media (min-width: 768px) {
+  .mission .container {
+    width: 90%;
+  }
+  .mission .container p {
+    font-size: 1.2rem;
+  }
+}
 .independence {
   background-color: #e1d0bc;
 }

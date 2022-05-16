@@ -95,6 +95,16 @@ details {
     border: none;
   }
 }
+@include respond-to('medium') {
+  .mission {
+    .container {
+      width:90%;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
 .independence {
   background-color: $secondary;
 }
