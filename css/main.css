@@ -683,11 +683,14 @@ details p {
 }
 #about .bio img {
   width: 200px;
+  border-radius: 8px;
 }
 @media (min-width: 768px) {
   #about .bio {
     flex-direction: row;
     align-items: flex-start;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
 }
 
