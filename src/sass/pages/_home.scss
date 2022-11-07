@@ -35,12 +35,12 @@ details {
     }
     p {
       font-style: italic;
-      margin:4px 0;
+      margin: 4px 0;
     }
     .cta {
       display: flex;
-      flex-wrap:wrap;
-      max-width:fit-content;
+      flex-wrap: wrap;
+      max-width: fit-content;
       a {
         display: block;
         margin: 6px;
@@ -54,7 +54,7 @@ details {
         text-transform: uppercase;
       }
       a:hover {
-        opacity:0.8;
+        opacity: 0.8;
       }
     }
   }
@@ -65,9 +65,9 @@ details {
     .heroBlurb {
       max-width: 60%;
       .cta {
-        flex-wrap:nowrap;
+        flex-wrap: nowrap;
         a {
-          font-size:0.8rem;
+          font-size: 0.8rem;
         }
       }
     }
@@ -95,10 +95,10 @@ details {
     border: none;
   }
 }
-@include respond-to('medium') {
+@include respond-to("medium") {
   .mission {
     .container {
-      width:90%;
+      width: 90%;
       p {
         font-size: 1.2rem;
       }
@@ -128,15 +128,20 @@ details {
     margin: 8px;
     padding: 12px 24px;
     border-radius: 8px;
-    h2, h3, h4, p, li, a {
-      color:$white;
+    h2,
+    h3,
+    h4,
+    p,
+    li,
+    a {
+      color: $white;
     }
     h4 {
       text-align: center;
     }
     img {
-      max-width:160px;
-      margin:0.5rem auto 0;
+      max-width: 160px;
+      margin: 0.5rem auto 0;
     }
   }
 }
@@ -158,48 +163,48 @@ details {
   background-color: $secondary;
   .container {
     .image {
-      margin-top:12px;
+      margin-top: 12px;
       border: 1px solid $black;
       img {
-        width:100%;
+        width: 100%;
         height: auto;
       }
     }
     .written {
       ul {
-        padding-left:22px;
+        padding-left: 22px;
         li {
-          margin-bottom:8px;
+          margin-bottom: 8px;
         }
       }
     }
   }
 }
-@include respond-to('medium') {
+@include respond-to("medium") {
   .commitment {
     .container {
       .image {
-        width:48%;
-        float:right;
-        margin-left:12px;
+        width: 48%;
+        float: right;
+        margin-left: 12px;
         max-width: 600px;
       }
       .written {
         ul {
-          padding-left:28px;
+          padding-left: 28px;
         }
       }
     }
   }
 }
-@media (min-width:800px) {
+@media (min-width: 800px) {
   .commitment .container .written .callout {
-    margin:0;
-    }
+    margin: 0;
   }
+}
 .notFor {
   .container {
-    padding-top:0;
+    padding-top: 0;
   }
   h3,
   ul li {
@@ -224,4 +229,18 @@ details {
 }
 #about {
   background-color: $secondary;
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 200px;
+    }
+  }
+  @include respond-to("medium") {
+    .bio {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
 }
