@@ -65,12 +65,10 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -109,7 +107,6 @@ select {
 .callout {
   background-color: #1c6e8c;
   text-align: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
@@ -148,10 +145,10 @@ ol li {
 
 @media (min-width: 1300px) {
   html,
-body,
-p,
-ul li,
-ol li {
+  body,
+  p,
+  ul li,
+  ol li {
     font-size: 20px;
   }
 }
@@ -347,7 +344,7 @@ nav .clg-menu li a {
     display: none;
   }
   nav .clg-menu,
-nav .clg-menu * {
+  nav .clg-menu * {
     margin: 0;
     padding: 0;
   }
@@ -492,7 +489,6 @@ details p {
 .hero .heroBlurb .cta {
   display: flex;
   flex-wrap: wrap;
-  max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
