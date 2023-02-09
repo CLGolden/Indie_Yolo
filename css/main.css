@@ -382,7 +382,7 @@ footer {
 /* ==========================================
 	MAIN LAYOUT
 ========================================== */
-.flexall {
+.flexall .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -390,11 +390,11 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .flexall {
+  .flexall .container {
     flex-direction: row;
     align-items: flex-start;
   }
-  .flexall > div {
+  .flexall .container > div {
     flex: 1 1 50%;
   }
 }

@@ -3,14 +3,14 @@
 ========================================== */
 @use "../abstracts" as *;
 
-.flexall {
+.flexall .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
 }
 @include respond-to("medium") {
-  .flexall {
+  .flexall .container {
     flex-direction: row;
     align-items: flex-start;
     > div {
